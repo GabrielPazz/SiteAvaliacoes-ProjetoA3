@@ -4,7 +4,7 @@
     box-sizing: border-box;
     margin: 0;
     padding: 0;
-    background-color: #24252A;
+    background-color: #1B1F27;
 }
 
 li, a, button, h1, h2{
@@ -63,8 +63,9 @@ div{
     margin: 15px;
     height: 350px;
     border-radius: 50px;
-    background-color: #39424d;
+    background-color: #181920;
     opacity: .5;
+    border: dashed 3px #5CE1E6;
 }
 
 #desc{
@@ -83,4 +84,13 @@ div{
 
 hr{
     opacity: 0.5;
+}
+
+::-webkit-scrollbar{
+    background-color: #181920;
+    width: 5px;
+}
+
+::-webkit-scrollbar-thumb{
+    background-color: #5CE1E6;
 }
