@@ -62,13 +62,15 @@ button:hover {
     background-color: rgba(0, 136, 169, 0.8);
 }
 
-div {
+section {
+    display: block;
     margin: 15px;
     height: 350px;
     border-radius: 50px;
     background-color: #181920;
-    opacity: .5;
     border: dashed 3px #5CE1E6;
+    align-items: center;
+    justify-content: center;
 }
 
 #desc {
@@ -96,4 +98,19 @@ hr {
 
 ::-webkit-scrollbar-thumb {
     background-color: #5CE1E6;
+}
+
+section>div{
+    height: 300px;
+    width: 500px;
+    background-color: #181920;
+    border-radius: 50px;
+}
+
+section>div>img {
+    height: 300px;
+    width: 250px;
+    margin-left: 60px;
+    margin-top: 22px;
+    border-radius: 25px;
 }
