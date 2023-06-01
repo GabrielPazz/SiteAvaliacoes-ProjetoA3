@@ -1,13 +1,17 @@
 /* Author: João dos Santos Cardoso de Jesus - 12522161564 */
 
-*{
+* {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
     background-color: #1B1F27;
 }
 
-li, a, button, h1, h2{
+li,
+a,
+button,
+h1,
+h2 {
     font-family: "Montserrat", sans-serif;
     font-weight: 500;
     font-size: 16px;
@@ -15,37 +19,37 @@ li, a, button, h1, h2{
     text-decoration: none;
 }
 
-header{
+header {
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 15px;
 }
 
-h1{
+h1 {
     cursor: pointer;
     color: #5CE1E6;
     font-size: 20px;
 }
 
-.nav_links{
+.nav_links {
     list-style: none;
 }
 
-.nav_links li{
+.nav_links li {
     display: inline-block;
     padding: 0px 20px;
 }
 
-.nav_links li a{
+.nav_links li a {
     transition: all 0.35s ease 0s;
 }
 
-.nav_links li a:hover{
-    color:#5CE1E6 ;
+.nav_links li a:hover {
+    color: #5CE1E6;
 }
 
-button{
+button {
     padding: 10px 25px;
     background-color: #5CE1E6;
     border: none;
@@ -55,6 +59,6 @@ button{
     margin-left: 20px;
 }
 
-button:hover{
+button:hover {
     background-color: rgba(0, 136, 169, 0.8);
 }
