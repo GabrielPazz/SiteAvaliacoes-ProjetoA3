@@ -1,20 +1,30 @@
-<!-- Author: João dos Santos Cardoso de Jesus - 12522161564 -->
-
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="login.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" href="/images/cr-logo.png" type="image/x-icon">
     <title>Login</title>
+    <link rel="stylesheet" href="login.css">
 </head>
+
 <body>
-    <form class="login">
-        <label for="email">Insira seu email:</label>
-        <input type="email" name="email" placeholder="email"></input>
-        <label for="password">Insira sua senha</label>
-        <input type="password" name="senha" placeholder="senha"></input>
-    </form>
+    <section class="login_area">
+        <div class="login">
+            <h1>CRIA'S REVIEWZ</h1>
+            <form method="post">
+                <input type="text" name="username" placeholder="Nome de usuário" id="username" autofocus>
+                <input type="text" name="password" placeholder="Senha" id="password">
+                <button type="button" id="login_button">Entrar</button>
+            </form>
+            <p>Ainda não tem conta? <a href="../register/register.html">Cadastre-se aqui!</a></p>
+        </div>
+    </section>
 </body>
+
 </html>
