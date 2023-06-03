@@ -92,7 +92,7 @@ section {
     background-color: #5CE1E6;
 }
 
-#movie_img, .desc_movie {
+#movie_img, .movie {
     display: flex;
     height: 100%;
     width: 390px;
