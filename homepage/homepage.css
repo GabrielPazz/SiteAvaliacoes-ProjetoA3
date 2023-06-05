@@ -95,7 +95,7 @@ section {
 #movie_img {
     display: flex;
     height: 100%;
-    width: 390px;
+    width: 30%;
     background-color: #181920;
     border-radius: 50px;
     /* border: 5px solid red; */
@@ -121,17 +121,12 @@ h3{
     padding: 10px;
 }
 
-.movie_title, span{
-    background-color: #181920;
-    /* border: solid 3px blue; */
-}
-
 .details{
     height: 100%;
-    width: 390px;
-    background-color: #181920;
+    width: 30%;
     border-radius: 50px;
     padding-top: 60px;
+    text-align: center;
     /* border: 5px solid red; */
 }
 
@@ -143,4 +138,15 @@ h3{
 span{
     font-family: 'Montserrat';
     color: #EDF0F1;
+}
+
+.avaliation{
+    height: 100%;
+    width: 40%;
+    border: 5px solid red;
+    border-radius: 50px;
+}
+
+div{
+    background-color: #181920;
 }
