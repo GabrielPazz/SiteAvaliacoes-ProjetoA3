@@ -141,12 +141,24 @@ span{
 }
 
 .avaliation{
-    height: 100%;
+    height: 50%;
     width: 40%;
-    border: 5px solid red;
     border-radius: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 div{
     background-color: #181920;
+}
+
+#avaliation_txt{
+    padding: 10px;
+    border: dashed 3px #38898b;
+    border-radius: 50px;
+    background-color: #20212b;
+    height: 75%;
+    width: 75%;
+    color: #fff;
 }
