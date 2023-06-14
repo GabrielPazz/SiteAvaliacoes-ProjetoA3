@@ -154,7 +154,7 @@ div{
     background-color: #181920;
 }
 
-#avaliation_txt{
+#avaliation_container{
     width: 60%;
     height: 50%;
     display: block;
@@ -166,7 +166,7 @@ form>button{
     margin-top: 10px;
 }
 
-#user_txt{
+#avaliation_text{
     height: 80%;
     width: 50%;
     border: none;
