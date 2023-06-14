@@ -79,3 +79,12 @@ button {
 button:hover {
     background-color: rgba(0, 136, 169, 0.8);
 }
+
+.fa-eye{
+    position: absolute;
+    margin-top: 58px;
+    margin-left: 250px;
+    color: #5CE1E6;
+    cursor: pointer;
+    opacity: .75;
+}

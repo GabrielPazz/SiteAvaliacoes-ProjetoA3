@@ -11,17 +11,20 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap" rel="stylesheet">
     <link rel="shortcut icon" href="/images/cr-logo.png" type="image/x-icon">
-    <title>Login</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="login.css">
+    <script src="login.js"></script>
+    <title>Login</title>
 </head>
 
 <body>
     <section class="login_area">
         <div class="login">
             <h1>BEM VINDO<BR>CRIA'S REVIEWS</h1>
-            <form method="post">
-                <input type="text" name="username" placeholder="Nome de usuário" id="username" autofocus>
-                <input type="text" name="password" placeholder="Senha" id="password">
+            <form>
+                <input type="text" placeholder="Nome de usuário" id="username" autofocus required>
+                <input type="password" placeholder="Senha" id="password" required>
+                <i class="fa fa-eye" aria-hidden="true" onclick="changeType();"></i>
                 <button type="button" id="login_button">Entrar</button>
             </form>
             <p>Ainda não tem conta? <a href="../register/cadastro.html">Crie uma aqui!</a></p>
