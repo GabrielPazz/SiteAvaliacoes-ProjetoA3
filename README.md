@@ -10,3 +10,7 @@ Brener Meyer Mayorga Quiroz - 12522167011 <br>
 <hr>
 
 # Temática abordada no projeto: Site de Avaliação de Séries
+
+# Como executar:
+
+Abra o arquivo com o nome de login.html, na pasta login e comece o uso.
