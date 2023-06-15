@@ -176,3 +176,12 @@ form>button{
     padding: 5px;
     border-radius: 10px;
 }
+
+#trailer {
+    background-color: #181920;
+}
+
+h2>span {
+    font-size: 12px;
+    background-color: #1B1F27;
+}
