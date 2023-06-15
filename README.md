@@ -13,6 +13,8 @@ Brener Meyer Mayorga Quiroz - 12522167011 <br>
 
 # Como executar:
 
-Rode o arquivo de nome RestApiApplication, localizado na pasta java.com.registro.restapi para incializar a Api, em seguida, abra o arquivo com o nome de homepage.html, na pasta pages/homepage e o inicialize com o LiveServer, e já será liberado o uso.
+Caso não o tenha instalado, realize a instalação e configuração do Mysql, em seguida, crie um database com o nome db_uam_a3, com o nome de usuario root, e a senha Root1234#.
+
+Rode o arquivo de nome RestApiApplication, localizado na pasta java.com.registro.restapi para incializar a Api, em seguida, abra o arquivo com o nome de homepage.html, na pasta pages/homepage e o inicialize com o LiveServer, e já estará liberado o uso.
 
 Para se registrar uma avaliação, é só digitar a avalição no campo de texto, e consultá-la na página de avaliações, que pode ser acessada pelo header da página.
