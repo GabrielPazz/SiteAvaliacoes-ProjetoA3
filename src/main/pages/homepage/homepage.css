@@ -6,7 +6,7 @@
     box-sizing: border-box;
     margin: 0;
     padding: 0;
-    background-color: #1B1F27;
+    background-color: #181920;
 }
 
 li, a, button, h1, h2 {
@@ -175,6 +175,7 @@ form>button{
     color: #fff;
     padding: 5px;
     border-radius: 10px;
+    background-color: #1B1F27;
 }
 
 #trailer {
@@ -183,5 +184,5 @@ form>button{
 
 h2>span {
     font-size: 12px;
-    background-color: #1B1F27;
+    background-color: #181920;
 }
