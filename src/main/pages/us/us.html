@@ -15,7 +15,8 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap" rel="stylesheet">
     <link rel="shortcut icon" href="/src/main/pages/images/cr-logo.png" type="image/x-icon">
-    <script src="https://code.jquery.com/jquery-3.7.0.js" integrity="sha256-JlqSTELeR4TLqP0OG9dxM7yDPqX1ox/HfgiSLBj8+kM=" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.7.0.js"
+        integrity="sha256-JlqSTELeR4TLqP0OG9dxM7yDPqX1ox/HfgiSLBj8+kM=" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="us.css">
     <title>Quem somos</title>
 </head>
@@ -91,7 +92,7 @@
                 </div>
             </div>
 
-            <div class="sobre-nos" id="last">
+            <div class="sobre-nos">
                 <div>
                     <h1 class="nome">Omar Turkmani</h1>
                     <p>"Sou Omar Turkmani tenho 19 anos estudo ciência da computação na Anhembi Morumbi, Atualmente
@@ -103,20 +104,17 @@
                 </div>
             </div>
 
-            <!-- <div class="sobre-nos">
+            <div class="sobre-nos">
                 <div>
                     <h1 class="nome">Nicollas</h1>
-                    <p>"Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been
-                        the
-                        industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of
-                        type
-                        and scrambled it to make a type specimen book"</p>
+                    <p>"Olá, me chamo Nicollas tenho 18 anos, sou um jovem extremamente curioso e motivado, estou em
+                        constate desenvolvimento de minhas habilidades para agregar na programação."</p>
                     <h1 class="instagram" style="margin-top: 5px"><a href="https://instagram.com/nicollasz__"
                             target="_blank">@nicollasz_</a></h1>
                 </div>
             </div>
 
-            <div class="sobre-nos">
+            <div class="sobre-nos" id="last">
                 <div>
                     <h1 class="nome">Rafael</h1>
                     <p>"Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been
@@ -127,7 +125,7 @@
                     <h1 class="instagram" style="margin-top: 5px"><a href="https://instagram.com/tettirafael"
                             target="_blank">@tettirafael</a></h1>
                 </div>
-            </div> -->
+            </div>
 
         </section>
 
@@ -144,22 +142,19 @@
 
 <script type="text/javascript">
 
-    $(document).ready(function()
-    {
-        $.get( 'http://localhost:8080/contato', function(data)
-        {
+    $(document).ready(function () {
+        $.get('http://localhost:8080/contato', function (data) {
             //console.log(data);
-            var div = $('#dvItems');    
+            var div = $('#dvItems');
 
-            $.each(data, function(i, item)
-            {
+            $.each(data, function (i, item) {
                 div.append('User: ' + item.username + ' - Password: ' + item.password + '</br>');
 
                 //console.table(item.id, item.username, item.password);
             });
         });
     })
-    
+
 </script>
 
 </html>
