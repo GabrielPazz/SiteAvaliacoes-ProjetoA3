@@ -1,0 +1,104 @@
+<!-- Author: Gustavo Rafael Pereira de Souza - 12522211771 -->
+<!-- Author: João dos Santos Cardoso de Jesus - 12522161564 -->
+<!-- Author: Brener Meyer Mayorga Quiroz - 12522167011 -->
+<!-- Author: Omar Turkmani - 12522159109 -->
+<!-- Author: Gabriel Paz de Oliveira Carvalho - 12522159109 -->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" href="/src/main/pages/images/cr-logo.png" type="image/x-icon">
+    <script src="https://code.jquery.com/jquery-3.7.0.js" integrity="sha256-JlqSTELeR4TLqP0OG9dxM7yDPqX1ox/HfgiSLBj8+kM=" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="homepage.css">
+    <title>Página inicial</title>
+</head>
+
+<body>
+    <header>
+        <h1>CRIA'S REVIEWS</h1>
+        <nav>
+            <ul class="nav_links">
+                <li><a href="">Início</a></li>
+                <li><a href="/src/main/pages/avaliations/avaliations.html">Avaliações</a></li>
+                <li><a href="/src/main/pages/us/us.html">Quem somos</a></li>
+            </ul>
+        </nav>
+        <a class="repo" href="https://github.com/joaoscj/A3---Usabilidade--desenvolvimento-web--mobile-e-jogos"
+            target="_blank"><button>Repositório</button></a>
+    </header>
+
+    <hr>
+
+    <h2 id="available">Filmes disponíveis para avaliação:<br><span>&#40Trailers disponíveis ao clicar nos posters.&#41</span></h2>
+
+    <main>
+
+        <div id="dv_template">
+
+        <section class="movie1" id="container" style="display: none;">
+            <div id="movie_img"><a href="https://www.youtube.com/watch?v=t_ULBP6V9bg" id="trailer" target="_blank"><img src="/src/main/pages/images/[logo]" alt="[title]"></a></div>
+            <div class="details">
+                <div class="movie_title">
+                    <h3>[nome]</h3>
+                </div>
+                <span>
+                    [descricao]
+                </span>
+            </div>
+            <form action="" method="post" id="avaliation_container">
+                <input type="text" name="" id="avaliation_text"><br>
+                <button>Enviar</button>
+            </form>
+
+        </section>
+
+    </div>
+
+        <div id="dv_filmes">
+
+        </div>
+
+    </main>
+
+    <hr>
+
+    <footer class="bottom">
+        <span>Cria's Reviews - 2023</span>
+    </footer>
+</body>
+
+<script type="text/javascript">
+
+    $(document).ready(function()
+    {
+        $.get( 'http://localhost:8080/filme', function(data)
+        {
+            console.log(data);
+            var template = $('#dv_template').html();
+
+            var div = $('#dv_filmes');    
+
+            $.each(data, function(i, item)
+            {
+                var filme = template;
+                filme = filme.replace('[nome]', item.nome);
+                filme = filme.replace('[descricao]', item.descricao);
+                filme = filme.replace('[logo]', item.logo);
+                filme = filme.replace('display: none', '' );
+                div.append(filme);
+
+                //console.table(item.id, item.username, item.password);
+            });
+        });
+    })
+    
+</script>
+
+</html>

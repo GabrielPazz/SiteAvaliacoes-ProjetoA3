@@ -14,7 +14,8 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap" rel="stylesheet">
-    <link rel="shortcut icon" href="/images/cr-logo.png" type="image/x-icon">
+    <link rel="shortcut icon" href="/src/main/pages/images/cr-logo.png" type="image/x-icon">
+    <script src="https://code.jquery.com/jquery-3.7.0.js" integrity="sha256-JlqSTELeR4TLqP0OG9dxM7yDPqX1ox/HfgiSLBj8+kM=" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="us.css">
     <title>Quem somos</title>
 </head>
@@ -25,9 +26,9 @@
         <h1>CRIA'S REVIEWS</h1>
         <nav>
             <ul class="nav_links">
-                <li><a href="/homepage/homepage.html">Início</a></li>
+                <li><a href="/src/main/pages/homepage/homepage.html">Início</a></li>
                 <li><a href="/avaliations/avaliations.html">Avaliações</a></li>
-                <li><a href="/us/us.html">Quem somos</a></li>
+                <li><a href="#">Quem somos</a></li>
             </ul>
         </nav>
         <a class="repo" href="https://github.com/joaoscj/A3---Usabilidade--desenvolvimento-web--mobile-e-jogos"
@@ -132,13 +133,33 @@
 
     </main>
 
+    <div id="dvItems" class="nome">
 
+    </div>
 
 
     <!-- <script src="js-homepage.js"></script> -->
 
 </body>
 
+<script type="text/javascript">
 
+    $(document).ready(function()
+    {
+        $.get( 'http://localhost:8080/contato', function(data)
+        {
+            //console.log(data);
+            var div = $('#dvItems');    
+
+            $.each(data, function(i, item)
+            {
+                div.append('User: ' + item.username + ' - Password: ' + item.password + '</br>');
+
+                //console.table(item.id, item.username, item.password);
+            });
+        });
+    })
+    
+</script>
 
 </html>

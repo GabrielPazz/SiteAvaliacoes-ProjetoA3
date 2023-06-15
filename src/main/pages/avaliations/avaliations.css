@@ -62,12 +62,3 @@ button {
 button:hover {
     background-color: rgba(0, 136, 169, 0.8);
 }
-
-::-webkit-scrollbar {
-    background-color: #181920;
-    width: 5px;
-}
-
-::-webkit-scrollbar-thumb {
-    background-color: #5CE1E6;
-}
