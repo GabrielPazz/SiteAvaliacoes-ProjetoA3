@@ -11,15 +11,12 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap" rel="stylesheet">
     <link rel="shortcut icon" href="/src/main/pages/images/cr-logo.png" type="image/x-icon">
+    <script src="https://code.jquery.com/jquery-3.7.0.js" integrity="sha256-JlqSTELeR4TLqP0OG9dxM7yDPqX1ox/HfgiSLBj8+kM=" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="avaliations.css">
     <title>Avaliações</title>
 </head>
 
 <body>
-    <script src="">
-
-    </script>
-
     <header>
         <h1>CRIA'S REVIEWS</h1>
         <nav>
@@ -34,6 +31,32 @@
 
     <hr>
 
+    <br/><br/>
+
+    <main>
+        <div id="dvItems" style="color:white">
+
+        </div>
+    </main>
+
 </body>
+
+<script type="text/javascript">
+
+    $(document).ready(function()
+    {
+        $.get( 'http://localhost:8080/avaliacao', function(data)
+        {
+            var div = $('#dvItems');    
+
+            $.each(data, function(i, item)
+            {
+                div.append("<img src='/src/main/pages/images/" + item.logo + "'' style='height:350px' /><br><br>" + item.filme + "</br><b>Avaliação: </b>" + item.avaliacao + "<br/><br/><hr><br><br>");
+
+            });
+        });
+    });
+   
+</script>
 
 </html>

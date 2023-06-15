@@ -4,7 +4,15 @@
     box-sizing: border-box;
     margin: 0;
     padding: 0;
-    background-color: #1B1F27;
+    background-color: #181920;
+}
+
+main {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    height: 100%;
+    font-family: 'Montserrat', sans-serif;
 }
 
 li,

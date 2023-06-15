@@ -11,7 +11,26 @@ public class Avaliacao {
 
     @Column(nullable = false)
     private String avaliacao;
+
+    private String filme;
+    private String logo;
     
+    public String getLogo() {
+        return logo;
+    }
+
+    public void setLogo(String logo) {
+        this.logo = logo;
+    }
+
+    public String getFilme() {
+        return filme;
+    }
+
+    public void setFilme(String filme) {
+        this.filme = filme;
+    }
+
     public Long getId() {
         return id;
     }
