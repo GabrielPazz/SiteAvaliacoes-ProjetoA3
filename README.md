@@ -7,6 +7,8 @@ Gustavo Rafael Pereira de Souza - 12522211771 <br>
 Omar Turkmani - 12522158236 <br>
 Gabriel Paz De Oliveira Carvalho - 12522159109 <br>
 Brener Meyer Mayorga Quiroz - 12522167011 <br>
+Rafael Tetti Estevam - 12522170274 <br>
+Nicollas Oliveira Rocha - 12522172069 <br>
 <hr>
 
 # Temática abordada no projeto: Site de Avaliação de Séries
