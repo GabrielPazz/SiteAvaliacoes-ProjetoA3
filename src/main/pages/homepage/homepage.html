@@ -42,8 +42,8 @@
 
         <div id="dv_template">
 
-        <section class="movie1" id="container" style="display: none;">
-            <div id="movie_img"><a href="https://www.youtube.com/watch?v=t_ULBP6V9bg" id="trailer" target="_blank"><img src="/src/main/pages/images/[logo]" alt="[title]"></a></div>
+        <section id="container" style="display: none;">
+            <div id="movie_img"><a href="https://www.youtube.com/watch?v=t_ULBP6V9bg" id="trailer" target="_blank"><img src="/src/main/pages/images/[logo]" alt="[altnome]"></a></div>
             <div class="details">
                 <div class="movie_title">
                     <h3>[nome]</h3>
@@ -52,10 +52,10 @@
                     [descricao]
                 </span>
             </div>
-            <form action="" method="post" id="avaliation_container">
-                <input type="text" name="" id="avaliation_text"><br>
-                <button>Enviar</button>
-            </form>
+            <div id="avaliation_container">
+                <input type="text" id="txt_avaliacao[id]" class="avaliation_text"/><br>
+                <button onclick="return avaliar('[id]');">Enviar</button>
+            </div>
 
         </section>
 
@@ -80,7 +80,7 @@
     {
         $.get( 'http://localhost:8080/filme', function(data)
         {
-            console.log(data);
+            //console.log(data);
             var template = $('#dv_template').html();
 
             var div = $('#dv_filmes');    
@@ -89,15 +89,70 @@
             {
                 var filme = template;
                 filme = filme.replace('[nome]', item.nome);
+                filme = filme.replace('[altnome]', item.nome);
                 filme = filme.replace('[descricao]', item.descricao);
                 filme = filme.replace('[logo]', item.logo);
-                filme = filme.replace('display: none', '' );
+                filme = filme.replace('[id]', item.id);
+                filme = filme.replace('[id]', item.id);
+                filme = filme.replace('display: none', '');
+
                 div.append(filme);
 
                 //console.table(item.id, item.username, item.password);
             });
         });
-    })
+    });
+   
+    function avaliar(filmeId)
+    {
+        var txt = $('#txt_avaliacao' + filmeId);
+
+        if (txt.val()=='')
+        {
+            alert('Campo de avaliação vazio.');
+            txt.focus();
+        }
+        else    
+        {
+            var payload = 
+            {
+                id: filmeId, 
+                avaliacao: txt.val()
+            };
+
+            $.ajax
+            ({
+                type: "POST",
+                url: "http://localhost:8080/avaliacao",
+                data: JSON.stringify(payload),
+                headers: 
+                {
+                    'Accept': 'application/json',
+                    'Content-Type': 'application/json'
+                },
+                success: function(data) 
+                {
+                    alert('Avaliacao cadastrada com sucesso');
+                    txt.val('').focus();
+
+                    if (data.status == 'OK')
+                    {
+                        console.log('Avaliacao cadastrada');
+                    }
+                    else
+                    {
+                       //alert('Erro ao cadastrar a avaliacao: ' + data.status + ', ' + data.errorMessage);
+                    }
+                },
+                error: function(xhr, ajaxOptions, thrownError) 
+                {
+                    alert("err"+thrownError+xhr.responseText);
+                }
+            });
+        }
+
+        return false;
+    }
     
 </script>
 

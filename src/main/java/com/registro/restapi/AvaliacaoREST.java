@@ -15,28 +15,36 @@ import org.springframework.web.bind.annotation.RestController;
 import com.registro.restapi.database.RepositorioAvaliacao;
 import com.registro.restapi.entidade.Avaliacao;
 
+@CrossOrigin
 @RestController
 @RequestMapping("/avaliacao")
-public class AvaliacaoREST {
+public class AvaliacaoREST 
+{
     @Autowired
     private RepositorioAvaliacao repositorio;
 
-    @CrossOrigin
     @GetMapping
-    public List<Avaliacao> listar() {
+    public List<Avaliacao> listar() 
+    {
         return repositorio.findAll();
     }
-@PostMapping
-    public void salvar(@RequestBody Avaliacao contato) {
+
+    @PostMapping
+    public void salvar(@RequestBody Avaliacao contato) 
+    {
         repositorio.save(contato);
     }
-@PutMapping
-    public void alterar(@RequestBody Avaliacao contato) {
+
+    @PutMapping
+    public void alterar(@RequestBody Avaliacao contato) 
+    {
         if (contato.getId() > 0)
             repositorio.save(contato);
     }
-@DeleteMapping
-    public void excluir(@RequestBody Avaliacao contato) {
+
+    @DeleteMapping
+    public void excluir(@RequestBody Avaliacao contato) 
+    {
         repositorio.delete(contato);
     }
 

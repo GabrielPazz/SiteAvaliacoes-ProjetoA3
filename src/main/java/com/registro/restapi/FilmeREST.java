@@ -11,15 +11,17 @@ import org.springframework.web.bind.annotation.RestController;
 import com.registro.restapi.database.RepositorioFilme;
 import com.registro.restapi.entidade.Filme;
 
+@CrossOrigin
 @RestController
 @RequestMapping("/filme")
-public class FilmeREST {
+public class FilmeREST 
+{
     @Autowired
     private RepositorioFilme repositorio;
 
-    @CrossOrigin
     @GetMapping
-    public List<Filme> listar() {
+    public List<Filme> listar() 
+    {
         return repositorio.findAll();
     }
 
