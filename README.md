@@ -20,3 +20,5 @@ Caso não o tenha instalado, realize a instalação e configuração do Mysql, e
 Rode o arquivo de nome RestApiApplication, localizado na pasta java.com.registro.restapi para incializar a Api, em seguida, abra o arquivo com o nome de homepage.html, na pasta pages/homepage e o inicialize com o LiveServer, e já estará liberado o uso.
 
 Para se registrar uma avaliação, é só digitar a avalição no campo de texto, e consultá-la na página de avaliações, que pode ser acessada pelo header da página; para atualizar uma avaliação, basta somente digitar uma nova avaliação na página inicial.
+
+https://github.com/joaoscj/A3---Usabilidade--desenvolvimento-web--mobile-e-jogos
