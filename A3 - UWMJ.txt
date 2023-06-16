@@ -1,19 +1,18 @@
-# A3 - Usabilidade, desenvolvimento web, mobile e jogos <br><hr>
+A3 - Usabilidade, desenvolvimento web, mobile e jogos <br><hr>
 
-# Integrantes do grupo:
+Integrantes do grupo:
 
-João dos Santos Cardoso de Jesus - 12522161564 <br>
-Gustavo Rafael Pereira de Souza - 12522211771 <br>
-Omar Turkmani - 12522158236 <br>
-Gabriel Paz De Oliveira Carvalho - 12522159109 <br>
-Brener Meyer Mayorga Quiroz - 12522167011 <br>
-Rafael Tetti Estevam - 12522170274 <br>
-Nicollas Oliveira Rocha - 12522172069 <br>
-<hr>
+João dos Santos Cardoso de Jesus - 12522161564
+Gustavo Rafael Pereira de Souza - 12522211771
+Omar Turkmani - 12522158236
+Gabriel Paz De Oliveira Carvalho - 12522159109
+Brener Meyer Mayorga Quiroz - 12522167011
+Rafael Tetti Estevam - 12522170274
+Nicollas Oliveira Rocha - 12522172069
 
-# Temática abordada no projeto: Site de Avaliação de Séries
+Temática abordada no projeto: Site de Avaliação de Séries
 
-# Como executar:
+Como executar:
 
 Caso não o tenha instalado, realize a instalação e configuração do Mysql, em seguida, crie um database com o nome db_uam_a3, com o nome de usuario root, e a senha Root1234#.
 
