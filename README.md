@@ -15,7 +15,7 @@ Nicollas Oliveira Rocha - 12522172069 <br>
 
 # Como executar:
 
-Caso não o tenha instalado, realize a instalação e configuração do Mysql, em seguida, crie um database com o nome db_uam_a3, com o nome de usuario root, e a senha Root1234#.
+Caso não o tenha instalado, realize a instalação e configuração do Mysql, em seguida, crie um database com o nome db_uam_a3 (mais detalhes quanto a tabelas e elementos estão presentes no pdf, favor verificar para que sejam evitados erros.), com o nome de usuario root, e a senha Root1234#.
 
 Rode o arquivo de nome RestApiApplication, localizado na pasta java.com.registro.restapi para incializar a Api, em seguida, abra o arquivo com o nome de homepage.html, na pasta pages/homepage e o inicialize com o LiveServer, e já estará liberado o uso.
 
